@@ -4,6 +4,21 @@ An AI-assisted financial decision engine for HackerRank Orchestrate. For every p
 
 ## How it works
 
+```mermaid
+flowchart TD
+    A[Load CSV inputs] --> B[Resolve image-backed blank amounts]
+    B --> C[Build request-specific case dossier]
+    C --> D[Groq Qwen: interpret ambiguity]
+    D --> E[Candidate prediction JSON]
+    E --> F[Deterministic validator]
+    F -->|valid| G[Write prediction row]
+    F -->|invalid or unavailable| H[Deterministic fallback]
+    H --> G
+    G --> I[Sample comparison report]
+    I -->|sample score accepted| J[Generate output.csv]
+    I -->|needs improvement| C
+```
+
 ```text
 Structured financial records ─┐
 Messages and image amounts ───┼─> case dossier ─> Groq analyst ─> strict validator ─> CSV output
