@@ -1,0 +1,17 @@
+image_id,event_id,amount,currency,source_field
+image_01,event_253,4365000,IDR,net_pay
+image_02,event_1442,100000,INR,balance_due
+image_03,event_1545,41272,INR,cash_paid
+image_04,event_1700,2854,INR,item_bill
+image_05,event_1786,704.05,INR,amount_due_by_due_date
+image_06,event_3051,1995,INR,invoice_total
+image_07,event_3231,8528.10,INR,grand_total
+image_08,event_4535,15339,INR,total_amount_received
+image_09,event_5170,723,INR,total_amount_received
+image_10,event_6033,79679.26,INR,balance_due
+image_11,event_6859,3650,INR,amount_payable
+image_12,event_7307,33.50,USD,total
+image_13,event_7941,2298,INR,total_paid
+image_14,event_9421,4543,INR,total
+image_15,event_9806,9968,INR,grand_total
+image_16,event_10521,393.22,INR,total

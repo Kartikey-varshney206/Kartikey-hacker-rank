@@ -1,0 +1,14 @@
+# Local credentials
+.env
+log.txt
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+code/vendor/
+
+# Generated local evaluation artifacts
+sample_output.csv
+llm_*.csv
+reproduce_output.csv
+evaluation/sample_report.md
